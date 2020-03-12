@@ -132,6 +132,21 @@ ul {
   padding: 7% 30%;
 }
 
+.date-footer {
+  color: #5f5f5f;
+  font-size: 9.99px;
+  margin: 0px;
+}
+
+.postfooter {
+  border-bottom: 1px white solid;
+}
+
+.twitter {
+  font-size: 13px;
+  color: #7b6c63;
+}
+
 
 
 /*---Media Queries --*/
