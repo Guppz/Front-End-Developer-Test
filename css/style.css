@@ -18,6 +18,10 @@ ul {
   padding-bottom: 90px;
 }
 
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
 .bg-dark {
   background-color: #303030;
 }
