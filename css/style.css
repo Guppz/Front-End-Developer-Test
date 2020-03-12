@@ -67,6 +67,7 @@ ul {
 
 .second-line {
   font-size: 4.125rem;
+
 }
 
 .brown-color {
@@ -175,7 +176,17 @@ ul {
   color: #7b6c63;
 }
 
+@media (max-width: 767px) and (max-width:1223px) {
+  .first-line {
+    font-size: 1.05rem;
+  }
 
+  .second-line {
+    font-size: 2.125rem;
+
+  }
+
+}
 
 /*---Media Queries --*/
 @media (max-width: 992px) {}
@@ -193,6 +204,18 @@ ul {
     padding: 7% 5%;
   }
 
+  .bg1 {
+    content: url("/img/bg-1-mobile.png");
+  }
+
+  .bg2 {
+    content: url("/img/bg-2-sm.png");
+  }
+
+  .bg3 {
+    content: url("/img/bg-3-sm.png");
+  }
+
   /* .d-flex {
     display: block !important;
   }
@@ -201,77 +224,52 @@ ul {
 .text-right {
   text-align: center !important;
 } */
+}
 
-  @media (max-width: 576px) {}
+@media (max-width: 576px) {}
 
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
 
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0 !important;
+}
 
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
+#fixed {
+  background-image: url("img/mac.png");
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
 
-
-
-
-
-
-  /*---Firefox Bug Fix --*/
-  .carousel-item {
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
-  }
-
-  /*--- Fixed Background Image --*/
-  figure {
-    position: relative;
-    width: 100%;
-    height: 60%;
-    margin: 0 !important;
-  }
-
-  .fixed-wrap {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  #fixed {
-    background-image: url("img/mac.png");
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    will-change: transform;
-  }
-
-  /*--- Bootstrap Padding Fix --*/
-  [class*="col-"] {
-    padding: 1rem;
-  }
-
-  /*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
