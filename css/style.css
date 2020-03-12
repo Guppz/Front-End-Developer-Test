@@ -185,6 +185,14 @@ ul {
     margin-left: 0%;
   }
 
+  .mr-5 {
+    margin-right: 0% !important;
+  }
+
+  .contact-padding {
+    padding: 7% 5%;
+  }
+
   /* .d-flex {
     display: block !important;
   }
