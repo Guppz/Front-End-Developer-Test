@@ -182,7 +182,15 @@ ul {
   padding-left: 40%;
 }
 
-@media (max-width: 767px) and (max-width: 1223px) {
+
+
+@media (min-width: 768px) and (max-width: 956px) {
+  .hero-copy {
+    top: 5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1224px) {
   .first-line {
     font-size: 1.05rem;
   }
@@ -233,6 +241,40 @@ ul {
 
   .bg3 {
     content: url("/img/bg-3-sm.png");
+  }
+
+  .first-line {
+    font-size: 1.05rem;
+  }
+
+  .second-line {
+    font-size: 1.125rem;
+  }
+
+  .hero-copy {
+    top: 5%;
+  }
+
+  .download-btn {
+    width: 162px;
+    height: 38px;
+  }
+
+
+}
+
+
+@media (min-width:320px) and (max-width: 360px) {
+  .hero-copy {
+    top: -10%;
+  }
+
+  .first-line {
+    font-size: 15px;
+  }
+
+  .second-line {
+    font-size: 17px;
   }
 }
 
