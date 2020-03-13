@@ -26,19 +26,15 @@ ul {
   background-color: #303030;
 }
 
-
-
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, 0.75);
   border-bottom: 4px #7b6c63 solid;
 }
-
 
 .logo {
   font-family: "Oleo Script", cursive;
 }
-
 
 .navbar {
   padding: 0.8rem;
@@ -67,7 +63,6 @@ ul {
 
 .second-line {
   font-size: 4.125rem;
-
 }
 
 .brown-color {
@@ -98,11 +93,9 @@ ul {
   border: 2px solid black;
 }
 
-
 .download-btn:hover {
   color: #7b6c63 !important;
 }
-
 
 .icons-font {
   font-size: 29px;
@@ -159,13 +152,11 @@ ul {
   color: #929292;
 }
 
-
 .date-footer {
   color: #5f5f5f;
   font-size: 9.99px;
   margin: 0px;
 }
-
 
 .postfooter {
   border-bottom: 1px white solid;
@@ -176,20 +167,48 @@ ul {
   color: #7b6c63;
 }
 
-@media (max-width: 767px) and (max-width:1223px) {
+.css-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 42px;
+}
+
+.blog-padding-right {
+  padding-right: 40%;
+}
+
+.blog-padding-left {
+  padding-left: 40%;
+}
+
+@media (max-width: 767px) and (max-width: 1223px) {
   .first-line {
     font-size: 1.05rem;
   }
 
   .second-line {
     font-size: 2.125rem;
-
   }
-
 }
 
 /*---Media Queries --*/
-@media (max-width: 992px) {}
+@media (max-width: 1000px) {
+  .css-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 42px;
+  }
+
+  .blog-padding-right {
+    padding-right: 0%;
+  }
+
+  .blog-padding-left {
+    padding-left: 0%;
+  }
+}
 
 @media (max-width: 767px) {
   .offset-3 {
@@ -215,18 +234,21 @@ ul {
   .bg3 {
     content: url("/img/bg-3-sm.png");
   }
+}
 
-  /* .d-flex {
-    display: block !important;
+@media (max-width: 576px) {
+  .mobile-blog {
+    flex-direction: column;
+  }
+
+  .mobile-blog-direcion {
+    flex-direction: column-reverse;
+  }
+
+  .text-right {
+    text-align: left !important;
   }
 }
-
-.text-right {
-  text-align: center !important;
-} */
-}
-
-@media (max-width: 576px) {}
 
 /*---Firefox Bug Fix --*/
 .carousel-item {
