@@ -65,6 +65,15 @@ ul {
   font-size: 4.125rem;
 }
 
+.title {
+  font-size: 35px;
+}
+
+.line {
+  width: 47px;
+  border: 3px solid;
+}
+
 .brown-color {
   color: #7b6c63;
 }
@@ -181,6 +190,12 @@ ul {
 .blog-padding-left {
   padding-left: 40%;
 }
+
+.semi {
+  font-weight: 600;
+}
+
+
 
 
 
